@@ -6,11 +6,11 @@ app.set('views', './views');
 const port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
-    res.render('index', {title: 'Заголовок', message: 'Тут текст!'});
+    res.render('index', {title: 'Заголовок', message: 'Мой текст!'});
 });
 
 app.get('/page2', function (req, res) {
-    res.render('page2', {title: 'Страница 2', message: 'Текст второй страницы'});
+    res.render('page2', {title: 'Страница 2', message: 'Content is not available'});
 });
 
 app.listen(port, function() {
