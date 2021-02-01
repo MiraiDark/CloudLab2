@@ -5,7 +5,7 @@ app.set('views', './views');
 
 const port = process.env.PORT || 8080;
 
-app.get('/', function (req, res) {
+app.get('/index', function (req, res) {
     res.render('index', {title: 'Заголовок', message: 'Мой текст!'});
 });
 
